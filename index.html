@@ -2,28 +2,44 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>LAPTOK - Laptops renovadas</title>
+<title>LAPTOK</title>
 
 <style>
 body {
-  font-family: Arial;
   margin: 0;
-  background: #0f0f0f;
+  font-family: Arial;
+  background: #0a0a0a;
   color: white;
-  text-align: center;
 }
 
 .header {
-  padding: 40px;
-  background: black;
+  background: linear-gradient(135deg, #00ff88, #0077ff);
+  padding: 60px 20px;
+  text-align: center;
 }
 
 .header h1 {
-  color: #00ff88;
+  margin: 0;
+  font-size: 40px;
+}
+
+.header p {
+  font-size: 18px;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 15px 25px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 .section {
-  padding: 30px;
+  padding: 40px 20px;
+  text-align: center;
 }
 
 .grid {
@@ -36,8 +52,13 @@ body {
   background: #1a1a1a;
   margin: 15px;
   padding: 15px;
-  border-radius: 10px;
-  width: 250px;
+  border-radius: 12px;
+  width: 260px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card img {
@@ -46,8 +67,9 @@ body {
 }
 
 .price {
-  font-size: 20px;
+  font-size: 22px;
   margin: 10px 0;
+  color: #00ff88;
 }
 
 .sold {
@@ -55,13 +77,11 @@ body {
   font-weight: bold;
 }
 
-button {
-  padding: 12px;
-  margin-top: 10px;
-  border: none;
-  background: #00ff88;
-  cursor: pointer;
-  width: 100%;
+.footer {
+  background: black;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
 }
 </style>
 </head>
@@ -70,32 +90,33 @@ button {
 
 <div class="header">
   <h1>LAPTOK</h1>
-  <p>Laptops renovadas listas para estudiar, trabajar o regalar 🔥</p>
+  <p>No compres otra laptop… renueva la tuya 🔥</p>
+  <a href="https://wa.me/51TU_NUMERO?text=Hola%20quiero%20una%20laptop">
+    <button class="btn">Escríbeme ahora</button>
+  </a>
 </div>
 
 <div class="section">
-  <h2>Catálogo</h2>
+  <h2>Modelos recientes</h2>
 
   <div class="grid">
 
-    <!-- PRODUCTO 1 -->
     <div class="card">
       <img src="LINK_IMAGEN_1">
       <h3>Mario Edition</h3>
       <div class="price">S/450</div>
       <div class="sold">VENDIDO</div>
-      <a href="https://wa.me/51TU_NUMERO?text=Hola%20quiero%20una%20laptop%20similar%20a%20la%20Mario%20Edition">
-        <button>Quiero una similar</button>
+      <a href="https://wa.me/51TU_NUMERO?text=Hola%20quiero%20una%20similar%20a%20Mario">
+        <button class="btn">Quiero una similar</button>
       </a>
     </div>
 
-    <!-- PRODUCTO 2 -->
     <div class="card">
       <img src="LINK_IMAGEN_2">
       <h3>Spiderman Edition</h3>
       <div class="price">S/480</div>
-      <a href="https://wa.me/51TU_NUMERO?text=Hola%20quiero%20la%20Spiderman%20Edition">
-        <button>Consultar</button>
+      <a href="https://wa.me/51TU_NUMERO?text=Hola%20quiero%20la%20Spiderman">
+        <button class="btn">Consultar</button>
       </a>
     </div>
 
@@ -103,13 +124,22 @@ button {
 </div>
 
 <div class="section">
-  <h2>¿Quieres una laptop personalizada?</h2>
-  <p>Completa este formulario y te contactamos solo si eres cliente real</p>
+  <h2>¿Por qué LAPTOK?</h2>
+  <p>✔ Más barato que comprar otra laptop</p>
+  <p>✔ Diseño único (no stickers)</p>
+  <p>✔ Equipos listos para estudiar y trabajar</p>
+</div>
 
+<div class="section">
+  <h2>Solicita la tuya</h2>
   <a href="LINK_FORMULARIO">
-    <button>Solicitar laptop</button>
+    <button class="btn">Completar formulario</button>
   </a>
 </div>
 
+<div class="footer">
+  © LAPTOK - Laptops renovadas
+</div>
+
 </body>
-</html>      
+</html>
